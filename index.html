@@ -1,0 +1,725 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Madol Duwa | Eco-Luxury Sanctuary & Wetland Reserve</title>
+    <!-- Remix Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet" />
+    <!-- Swiper.js CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Luxury Preloader -->
+    <div id="preloader" class="preloader">
+      <div class="preloader-content">
+        <div class="preloader-logo">M</div>
+        <div class="preloader-spinner"></div>
+        <span class="preloader-text">Loading Sanctuary...</span>
+      </div>
+    </div>
+
+    <!-- Scroll Progress Bar -->
+    <div id="scroll-progress" class="scroll-progress"></div>
+
+    <!-- Toast Notification Container -->
+    <div id="toast-container" class="toast-container"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+      <div class="nav__container">
+        <a href="#home" class="logo nav__logo">
+          <div class="logo-circle">M</div>
+          <span>Madol Duwa<br /><small>Wetland Eco Sanctuary Reserve</small></span>
+        </a>
+        <div class="nav__menu__btn" id="menu-btn">
+          <i class="ri-menu-line"></i>
+        </div>
+        <ul class="nav__links" id="nav-links">
+          <li><a href="#home" class="active">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#room">Suites</a></li>
+          <li><a href="#feature">Facilities</a></li>
+          <li><a href="#menu">Dining</a></li>
+          <li><a href="#news">Experiences</a></li>
+          <li><a href="#faq">FAQ</a></li>
+          <li><button class="btn btn-nav-book" id="nav-book-btn">Book Now</button></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="header" id="home">
+      <div class="hero__overlay"></div>
+      <div class="section__container header__container">
+        <p class="section__subheader">WELCOME TO PARADISE</p>
+        <h1>The Perfect Sanctuary <br />For Earthly Luxury</h1>
+        <p class="hero__desc">Immerse yourself in a serene wetland reserve in Koggala, Galle. Experience sustainable, world-class luxury built in harmony with nature.</p>
+        <div class="hero__buttons">
+          <a href="#about" class="btn btn-secondary">Take A Tour</a>
+          <a href="#room" class="btn btn-primary">View Our Suites</a>
+        </div>
+      </div>
+
+      <!-- Booking Widget Container -->
+      <div class="booking-widget__wrapper">
+        <div class="booking-widget">
+          <form id="booking-widget-form">
+            <div class="booking-input__group">
+              <label for="arrival-date"><i class="ri-calendar-check-line"></i> Arrival Date</label>
+              <input type="date" id="arrival-date" required />
+            </div>
+            <div class="booking-input__group">
+              <label for="departure-date"><i class="ri-calendar-close-line"></i> Departure Date</label>
+              <input type="date" id="departure-date" required />
+            </div>
+            <div class="booking-input__group">
+              <label for="booking-guests"><i class="ri-user-line"></i> Guests</label>
+              <select id="booking-guests">
+                <option value="1">1 Guest</option>
+                <option value="2" selected>2 Guests</option>
+                <option value="3">3 Guests</option>
+                <option value="4">4 Guests</option>
+                <option value="5">5+ Guests</option>
+              </select>
+            </div>
+            <div class="booking-input__group">
+              <label for="booking-room-type"><i class="ri-hotel-bed-line"></i> Room Type</label>
+              <select id="booking-room-type">
+                <option value="floating-suite">Floating Suite (Over Water)</option>
+                <option value="honeymoon-cabin">Luxury Honeymoon Eco-Cabin</option>
+                <option value="family-villa">Luxury Family Eco-Villa</option>
+              </select>
+            </div>
+            <button type="submit" class="btn btn-submit-booking">Check Availability</button>
+          </form>
+        </div>
+      </div>
+    </header>
+
+    <!-- About Section -->
+    <section class="about reveal-fade" id="about">
+      <div class="section__container about__container">
+        <div class="about__grid">
+          <div class="about__image image-overlap-1 reveal-zoom">
+            <img src="assets/about1.jpg" alt="Eco sanctuary path" />
+          </div>
+          <div class="about__card card-highlight reveal-slide-up">
+            <span><i class="ri-heart-line"></i></span>
+            <h4>Eco-Sustainability</h4>
+            <p>
+              Built in harmony with the Koggala wetland ecosystem. We operate on zero-single-use plastics, solar power, and organic farming.
+            </p>
+          </div>
+          <div class="about__image image-overlap-2 reveal-zoom reveal-delay-200">
+            <img src="assets/about2.jpg" alt="Luxury eco room view" />
+          </div>
+          <div class="about__card card-primary reveal-slide-up reveal-delay-200">
+            <span><i class="ri-calendar-check-line"></i></span>
+            <h4>Luxury Sanctuary</h4>
+            <p>Elegant spaces designed for ultimate relaxation, featuring premium amenities, scenic views, and natural architecture.</p>
+          </div>
+        </div>
+        <div class="about__content reveal-slide-left">
+          <p class="section__subheader">ABOUT US</p>
+          <h2 class="section__header">Discover Our Underground Eco Sanctuary</h2>
+          <p class="section__description">
+            Step into a unique world of subterranean and over-water luxury. Located in Koggala, Galle, our sanctuary blends ancient eco-construction methods with modern, luxury comforts. 
+          </p>
+          <p class="section__description">
+            Experience absolute silence, therapeutic lake breezes, and stunning Sri Lankan hospitality that redefines your connection to mother nature.
+          </p>
+          <div class="about__stats">
+            <div class="stat__item">
+              <h3><span class="stat-count" data-target="50">0</span>+</h3>
+              <p>Eco Acres</p>
+            </div>
+            <div class="stat__item">
+              <h3><span class="stat-count" data-target="100">0</span>%</h3>
+              <p>Organic Food</p>
+            </div>
+            <div class="stat__item">
+              <h3><span class="stat-count" data-target="15">0</span></h3>
+              <p>Boutique Suites</p>
+            </div>
+          </div>
+          <button class="btn btn-primary" id="about-book-btn">Book Your Stay</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Suites/Rooms Section -->
+    <section class="room reveal-fade" id="room">
+      <div class="section__container room__container-title reveal-slide-up">
+        <p class="section__subheader">OUR ACCOMMODATIONS</p>
+        <h2 class="section__header">Hand-Picked Eco Luxury Suites</h2>
+      </div>
+      <div class="room__grid">
+        <!-- Room 1 -->
+        <div class="room__card reveal-slide-up" data-room="floating-suite">
+          <div class="room__image-container">
+            <img src="assets/room1.jpg" alt="Floating Suite Over Water" />
+            <div class="room__badge">Popular</div>
+          </div>
+          <div class="room__card__details">
+            <div class="room__meta">
+              <h4>FLOATING SUITE (OVER WATER)</h4>
+              <p>A serene over-water retreat offering stunning sunset views and direct lake access.</p>
+              <div class="room__specs">
+                <span><i class="ri-fullscreen-line"></i> 65 m²</span>
+                <span><i class="ri-user-line"></i> 2 Guests</span>
+                <span><i class="ri-water-flash-line"></i> Lake View</span>
+              </div>
+            </div>
+            <div class="room__price-action">
+              <h3>LKR 65,000<span>/night</span></h3>
+              <button class="btn btn-room-detail" onclick="openRoomDetail('floating-suite')">View Details</button>
+            </div>
+          </div>
+        </div>
+        <!-- Room 2 -->
+        <div class="room__card reveal-slide-up reveal-delay-150" data-room="honeymoon-cabin">
+          <div class="room__image-container">
+            <img src="assets/room2.jpg" alt="Luxury Honeymoon Eco-Cabin" />
+            <div class="room__badge">Romantic</div>
+          </div>
+          <div class="room__card__details">
+            <div class="room__meta">
+              <h4>LUXURY HONEYMOON ECO-CABIN</h4>
+              <p>Romantic eco-luxury featuring a canopy bed, glass floor panels, and a private outdoor soaking tub.</p>
+              <div class="room__specs">
+                <span><i class="ri-fullscreen-line"></i> 80 m²</span>
+                <span><i class="ri-user-line"></i> 2 Guests</span>
+                <span><i class="ri-heart-line"></i> Honeymoon Special</span>
+              </div>
+            </div>
+            <div class="room__price-action">
+              <h3>LKR 75,000<span>/night</span></h3>
+              <button class="btn btn-room-detail" onclick="openRoomDetail('honeymoon-cabin')">View Details</button>
+            </div>
+          </div>
+        </div>
+        <!-- Room 3 -->
+        <div class="room__card reveal-slide-up reveal-delay-300" data-room="family-villa">
+          <div class="room__image-container">
+            <img src="assets/room3.jpg" alt="Luxury Family Eco-Villa" />
+            <div class="room__badge">Spacious</div>
+          </div>
+          <div class="room__card__details">
+            <div class="room__meta">
+              <h4>LUXURY FAMILY ECO-VILLA</h4>
+              <p>Spacious, sustainable two-story living designed for family comfort amidst lush local nature.</p>
+              <div class="room__specs">
+                <span><i class="ri-fullscreen-line"></i> 140 m²</span>
+                <span><i class="ri-user-line"></i> 4-5 Guests</span>
+                <span><i class="ri-seedling-line"></i> Garden View</span>
+              </div>
+            </div>
+            <div class="room__price-action">
+              <h3>LKR 85,000<span>/night</span></h3>
+              <button class="btn btn-room-detail" onclick="openRoomDetail('family-villa')">View Details</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Intro / Video Feature Section -->
+    <section class="intro reveal-fade">
+      <div class="section__container intro__container">
+        <div class="intro__content reveal-slide-right">
+          <p class="section__subheader">INTRO VIDEO</p>
+          <h2 class="section__header">Unveiling the Art of Earthly Living</h2>
+          <p class="section__description">
+            Discover a sanctuary experience that redefines contemporary eco-hospitality. Our custom architecture offers a minimalist aesthetic that prioritizes space, silence, and sensory delight. 
+          </p>
+          <p class="section__description">
+            Whether you are watching the morning light filter through our hidden skylights, enjoying a kayak safari on Koggala Lake, or walking across cool, polished local stone floors, you are participating in a journey beneath the surface that promises unforgettable memories.
+          </p>
+          <button class="btn btn-secondary" id="intro-book-btn">Book Your Retreat</button>
+        </div>
+        <div class="intro__video reveal-slide-left">
+          <div class="video__wrapper">
+            <video src="assets/luxury1.mp4" autoplay muted loop playsinline></video>
+            <div class="video__control-overlay">
+              <span id="video-mute-toggle"><i class="ri-volume-mute-line"></i></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Facilities / Features Section -->
+    <section class="section__container feature__container reveal-fade" id="feature">
+      <p class="section__subheader">RESORT FACILITIES</p>
+      <h2 class="section__header">Designed for Absolute Rest & Reconnection</h2>
+      <div class="feature__grid">
+        <div class="feature__card reveal-slide-up">
+          <span><i class="ri-star-line"></i></span>
+          <h4>Five-Star Rated Service</h4>
+          <p>Experience excellence recognized by world travelers. We take pride in personalized hospitality and attention to detail.</p>
+        </div>
+        <div class="feature__card reveal-slide-up reveal-delay-100">
+          <span><i class="ri-moon-clear-line"></i></span>
+          <h4>Quiet & Restful Hours</h4>
+          <p>Indulge in the luxury of absolute silence. We maintain dedicated quiet hours allowing guests to connect with the nature sounds.</p>
+        </div>
+        <div class="feature__card reveal-slide-up reveal-delay-200">
+          <span><i class="ri-map-pin-2-line"></i></span>
+          <h4>Prime Wetland Location</h4>
+          <p>Perfectly situated on Koggala Lake, Galle where biodiversity meets isolation. Rich in rare birds, flora, and fauna.</p>
+        </div>
+        <div class="feature__card reveal-slide-up">
+          <span><i class="ri-shield-check-line"></i></span>
+          <h4>Flexible Cancellation</h4>
+          <p>Travel with total peace of mind. We offer flexible cancellation and modification policies to suit your travel schedule.</p>
+        </div>
+        <div class="feature__card reveal-slide-up reveal-delay-100">
+          <span><i class="ri-qr-code-line"></i></span>
+          <h4>Modern Payment Options</h4>
+          <p>Support for online credit/debit card bookings, LANKAQR transfer, local bank transfers, and Binance Pay QR methods.</p>
+        </div>
+        <div class="feature__card reveal-slide-up reveal-delay-200">
+          <span><i class="ri-gift-line"></i></span>
+          <h4>Bespoke Eco-Experiences</h4>
+          <p>Exclusive offers for honeymoon retreats, bird-watching safaris, private camping under the stars, and glamping escapes.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Dining Section (Tabs & Menu) -->
+    <section class="menu reveal-fade" id="menu">
+      <div class="section__container menu__container">
+        <div class="menu__header reveal-slide-up">
+          <div>
+            <p class="section__subheader">LOCAL CULINARY ART</p>
+            <h2 class="section__header">Organic Wetland Kitchen</h2>
+          </div>
+          <div class="menu__tabs">
+            <button class="menu-tab-btn active" data-tab="all">All Items</button>
+            <button class="menu-tab-btn" data-tab="delicacies">Delicacies</button>
+            <button class="menu-tab-btn" data-tab="mains">Main Courses</button>
+            <button class="menu-tab-btn" data-tab="drinks">Beverages</button>
+          </div>
+        </div>
+
+        <ul class="menu__items" id="menu-items-list">
+          <!-- Item 1: Delicacies -->
+          <li data-category="delicacies">
+            <img src="assets/MukuluSweets.jpg" alt="Mukulu Sweets" />
+            <div class="menu__details">
+              <div class="menu__item-header">
+                <h4>Mukulu Sweets</h4>
+                <span class="menu__price">LKR 1,200</span>
+              </div>
+              <p>Classic Sri Lankan sweet delicacies crafted with traditional Kithul treacle and organic ingredients.</p>
+              <span class="menu__tag">Traditional</span>
+            </div>
+          </li>
+          <!-- Item 2: Drinks -->
+          <li data-category="drinks">
+            <img src="assets/NilKataroluMocktail.jpg" alt="Nil Katarolu Mocktail" />
+            <div class="menu__details">
+              <div class="menu__item-header">
+                <h4>Nil Katarolu Mocktail</h4>
+                <span class="menu__price">LKR 950</span>
+              </div>
+              <p>Refreshing blue butterfly pea flower tea blended with fresh lime juice, honey, and organic mint from our garden.</p>
+              <span class="menu__tag">Organic</span>
+            </div>
+          </li>
+          <!-- Item 3: Delicacies -->
+          <li data-category="delicacies">
+            <img src="assets/SiniWadikku.jpg" alt="Sini wadichchi" />
+            <div class="menu__details">
+              <div class="menu__item-header">
+                <h4>Sini wadichchi</h4>
+                <span class="menu__price">LKR 1,100</span>
+              </div>
+              <p>Traditional village-style caramelized sweet snack, freshly prepared by local home cooks for an authentic Galle taste.</p>
+              <span class="menu__tag">Local Specialty</span>
+            </div>
+          </li>
+          <!-- Item 4: Drinks -->
+          <li data-category="drinks">
+            <img src="assets/GreenTea.jpg" alt="Green Tea" />
+            <div class="menu__details">
+              <div class="menu__item-header">
+                <h4>Ceylon Green Tea</h4>
+                <span class="menu__price">LKR 800</span>
+              </div>
+              <p>Freshly brewed organic green tea harvested from the mist-covered southern hills, offering clean antioxidant benefits.</p>
+              <span class="menu__tag">Organic</span>
+            </div>
+          </li>
+          <!-- Item 5: Delicacies -->
+          <li data-category="delicacies">
+            <img src="assets/KiralaMousseDessert.jpg" alt="Kirala Mousse Dessert" />
+            <div class="menu__details">
+              <div class="menu__item-header">
+                <h4>Kirala Mousse Dessert</h4>
+                <span class="menu__price">LKR 1,400</span>
+              </div>
+              <p>Smooth, creamy tropical dessert made with locally-foraged Kirala (mangrove apple) fruit, giving a sweet and tangy finish.</p>
+              <span class="menu__tag">Signature</span>
+            </div>
+          </li>
+          <!-- Item 6: Mains -->
+          <li data-category="mains">
+            <img src="assets/KosKottuwithCrabSoup.jpg" alt="Kos Kottu with Crab Soup" />
+            <div class="menu__details">
+              <div class="menu__item-header">
+                <h4>Kos Kottu with Crab Soup</h4>
+                <span class="menu__price">LKR 2,800</span>
+              </div>
+              <p>Young jackfruit shredded and stir-fried village-style, served with piping hot, spicy southern wild lagoon crab soup.</p>
+              <span class="menu__tag">Highly Recommended</span>
+            </div>
+          </li>
+        </ul>
+
+        <!-- Showcase Images Grid -->
+        <div class="menu__images reveal-zoom">
+          <div class="showcase__img-box">
+            <img src="assets/md4.jpg" alt="Sanctuary wildlife" />
+            <div class="showcase__overlay"><span>Eco-Reserve Fauna</span></div>
+          </div>
+          <div class="showcase__img-box">
+            <img src="assets/menu8.jpg" alt="Dining area layout" />
+            <div class="showcase__overlay"><span>Sanctuary Dining</span></div>
+          </div>
+          <div class="showcase__img-box">
+            <img src="assets/menu9.jpg" alt="Fresh ingredients" />
+            <div class="showcase__overlay"><span>Organic Harvest</span></div>
+          </div>
+        </div>
+
+        <!-- Metric Banner (Replaces irrelevant website template statistics) -->
+        <ul class="menu__banner reveal-fade">
+          <li>
+            <span><i class="ri-leaf-line"></i></span>
+            <h4><span class="stat-count" data-target="50">0</span>+ Acres</h4>
+            <p>Wetland Sanctuary</p>
+          </li>
+          <li>
+            <span><i class="ri-restaurant-line"></i></span>
+            <h4><span class="stat-count" data-target="100">0</span>%</h4>
+            <p>Locally Sourced Food</p>
+          </li>
+          <li>
+            <span><i class="ri-bird-line"></i></span>
+            <h4><span class="stat-count" data-target="42">0</span>+</h4>
+            <p>Bird Species Protected</p>
+          </li>
+          <li>
+            <span><i class="ri-service-line"></i></span>
+            <h4><span class="stat-count" data-target="98">0</span>%</h4>
+            <p>Guest Satisfaction</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials" id="testimonials">
+      <div class="section__container testimonials__container">
+        <p class="section__subheader">TESTIMONIALS</p>
+        <h2 class="section__header">Stories From Our Guests</h2>
+        
+        <!-- Swiper Carousel -->
+        <div class="swiper-container testimonial-swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide testimonial-card">
+              <div class="rating">
+                <i class="ri-star-fill"></i>
+                <i class="ri-star-fill"></i>
+                <i class="ri-star-fill"></i>
+                <i class="ri-star-fill"></i>
+                <i class="ri-star-fill"></i>
+              </div>
+              <p class="testimonial__text">
+                "An absolute paradise! Sleeping in the Floating Suite and waking up to the sounds of tropical birds over the lake was magical. The Kos Kottu and Crab Soup is a culinary masterpiece."
+              </p>
+              <div class="testimonial__author">
+                <h5>Lukas & Sarah</h5>
+                <p>Munich, Germany</p>
+              </div>
+            </div>
+            <div class="swiper-slide testimonial-card">
+              <div class="rating">
+                <i class="ri-star-fill"></i>
+                <i class="ri-star-fill"></i>
+                <i class="ri-star-fill"></i>
+                <i class="ri-star-fill"></i>
+                <i class="ri-star-fill"></i>
+              </div>
+              <p class="testimonial__text">
+                "We spent our honeymoon in the Eco-Cabin. The private outdoor soaking tub under the forest canopy was incredibly romantic. Outstanding service from the staff who arranged a boat tour."
+              </p>
+              <div class="testimonial__author">
+                <h5>David & Emily</h5>
+                <p>London, UK</p>
+              </div>
+            </div>
+            <div class="swiper-slide testimonial-card">
+              <div class="rating">
+                <i class="ri-star-fill"></i>
+                <i class="ri-star-fill"></i>
+                <i class="ri-star-fill"></i>
+                <i class="ri-star-fill"></i>
+                <i class="ri-star-half-fill"></i>
+              </div>
+              <p class="testimonial__text">
+                "A model for sustainable ecotourism. The solar-powered villa was clean, modern, and spacious. Very educational for our kids to observe local birds and learn about wetland sanctuary preservation."
+              </p>
+              <div class="testimonial__author">
+                <h5>The Ranasinghe Family</h5>
+                <p>Colombo, Sri Lanka</p>
+              </div>
+            </div>
+          </div>
+          <!-- Add Pagination -->
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- News & Blog Section -->
+    <section class="section__container news__container reveal-fade" id="news">
+      <div class="news__header reveal-slide-up">
+        <div>
+          <p class="section__subheader">ECO EXPERIENCES</p>
+          <h2 class="section__header">Sanctuary Adventures</h2>
+        </div>
+      </div>
+      <div class="news__grid">
+        <!-- Card 1 -->
+        <div class="news__card reveal-slide-up">
+          <div class="news__image-container">
+            <img src="assets/news-1.jpg" alt="Sri Lankan Culinary Tour" />
+            <span class="news__tag">Gastronomy</span>
+          </div>
+          <div class="news__card__title">
+            <p><i class="ri-calendar-line"></i> 18th March 2026</p>
+            <p><i class="ri-user-line"></i> By Chef Emily</p>
+          </div>
+          <h4>Exploring Local Culinary Gems: A Foodie's Guide.</h4>
+          <p>
+            Learn about Galle's organic spices, herb gardens, and traditional cooking methods using local firewood and clay pots.
+          </p>
+        </div>
+        <!-- Card 2 -->
+        <div class="news__card reveal-slide-up reveal-delay-150">
+          <div class="news__image-container">
+            <img src="assets/news-2.jpg" alt="Mindfulness practices" />
+            <span class="news__tag">Wellness</span>
+          </div>
+          <div class="news__card__title">
+            <p><i class="ri-calendar-line"></i> 15th June 2026</p>
+            <p><i class="ri-user-line"></i> By Guru David</p>
+          </div>
+          <h4>Balancing Mind, Body, and Soul at Our Sanctuary.</h4>
+          <p>
+            Discover holistic lakefront meditation sessions, herbal oil massages, and mindfulness practices in absolute quietude.
+          </p>
+        </div>
+        <!-- Card 3 -->
+        <div class="news__card reveal-slide-up reveal-delay-300">
+          <div class="news__image-container">
+            <img src="assets/news-3.jpg" alt="Nature adventures" />
+            <span class="news__tag">Adventure</span>
+          </div>
+          <div class="news__card__title">
+            <p><i class="ri-calendar-line"></i> 08th August 2026</p>
+            <p><i class="ri-user-line"></i> By Guide Sarah</p>
+          </div>
+          <h4>Exploring Outdoor Activities Near Galle.</h4>
+          <p>
+            From kayaking and boat tours to bird watching and camping in mangrove forest zones, explore Galle's best eco paths.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ Section (Accordion) -->
+    <section class="faq reveal-fade" id="faq">
+      <div class="section__container faq__container">
+        <p class="section__subheader">FREQUENTLY ASKED QUESTIONS</p>
+        <h2 class="section__header">Need Help? Read FAQ</h2>
+        
+        <div class="faq__grid reveal-slide-up">
+          <div class="faq__item">
+            <button class="faq__question">
+              <span>How do I get to Madol Duwa Wetland Reserve?</span>
+              <i class="ri-add-line"></i>
+            </button>
+            <div class="faq__answer">
+              <p>We are located in Koggala, Galle, approximately a 2.5-hour drive from Colombo via the Southern Expressway. We can arrange airport pick-up services upon request.</p>
+            </div>
+          </div>
+          <div class="faq__item">
+            <button class="faq__question">
+              <span>What is the eco policy of the reserve?</span>
+              <i class="ri-add-line"></i>
+            </button>
+            <div class="faq__answer">
+              <p>We operate strictly on sustainable principles: solar power generation, organic kitchen waste composting, a complete ban on single-use plastics, and supporting the local community in Koggala.</p>
+            </div>
+          </div>
+          <div class="faq__item">
+            <button class="faq__question">
+              <span>Are booking cancellations free?</span>
+              <i class="ri-add-line"></i>
+            </button>
+            <div class="faq__answer">
+              <p>Yes, we offer free cancellation up to 7 days before your arrival date. Cancellations made within 7 days are subject to a 1-night room charge fee.</p>
+            </div>
+          </div>
+          <div class="faq__item">
+            <button class="faq__question">
+              <span>Can we book local boat safaris through the hotel?</span>
+              <i class="ri-add-line"></i>
+            </button>
+            <div class="faq__answer">
+              <p>Absolutely! We offer complimentary daily guided kayak safaris, and we can organize customized private motorboat excursions around the 15 islands of Koggala Lake, including Cinnamon Island.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section / Footer Map -->
+    <footer class="footer">
+      <div class="section__container footer__container">
+        <div class="footer__col">
+          <div class="logo footer__logo">
+            <div class="logo-circle">M</div>
+            <span>Madol Duwa<br /><small>Wetland Eco Sanctuary Reserve</small></span>
+          </div>
+          <p class="section__description">
+            Experience the perfect blend of sustainable eco-living and premium luxury comfort. We are dedicated to providing unforgettable memories in Galle, Sri Lanka.
+          </p>
+          <ul class="footer__socials">
+            <li><a href="#" aria-label="YouTube"><i class="ri-youtube-fill"></i></a></li>
+            <li><a href="#" aria-label="Instagram"><i class="ri-instagram-line"></i></a></li>
+            <li><a href="#" aria-label="Facebook"><i class="ri-facebook-fill"></i></a></li>
+            <li><a href="#" aria-label="LinkedIn"><i class="ri-linkedin-fill"></i></a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>Resort Services</h4>
+          <ul class="footer__links">
+            <li><a href="#room">Luxury Accommodations</a></li>
+            <li><a href="#menu">Traditional Organic Dining</a></li>
+            <li><a href="#news">Lake Boat & Kayak Tours</a></li>
+            <li><a href="#feature">Special Honeymoon Offers</a></li>
+            <li><a href="#faq">Concierge & Local Guides</a></li>
+            <li><a href="#faq">24/7 Guest Support</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>Contact Us</h4>
+          <ul class="footer__links contact__details">
+            <li>
+              <span><i class="ri-phone-fill"></i></span>
+              <div>
+                <h5>Phone Number</h5>
+                <p>+94 74 096 5572</p>
+              </div>
+            </li>
+            <li>
+              <span><i class="ri-mail-open-line"></i></span>
+              <div>
+                <h5>Email Address</h5>
+                <p>wetlandecosanctuary@gmail.com</p>
+              </div>
+            </li>
+            <li>
+              <span><i class="ri-map-pin-2-fill"></i></span>
+              <div>
+                <h5>Sanctuary Location</h5>
+                <p>Koggala Lake, Galle, Sri Lanka</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bar">
+        <p>&copy; 2026 Madol Duwa Wetland Eco Sanctuary. All Rights Reserved. Crafted for luxury eco-living. Designer: Dzzu</p>
+      </div>
+    </footer>
+
+    <!-- ROOM DETAIL MODAL -->
+    <div id="room-detail-modal" class="modal-overlay">
+      <div class="modal-content room-modal-content">
+        <span class="modal-close" onclick="closeRoomDetail()"><i class="ri-close-line"></i></span>
+        <div class="room-detail__body" id="room-detail-body">
+          <!-- Dynamically populated by JS -->
+        </div>
+      </div>
+    </div>
+
+    <!-- BOOKING REQUEST MODAL -->
+    <div id="booking-modal" class="modal-overlay">
+      <div class="modal-content booking-modal-content">
+        <span class="modal-close" onclick="closeBookingModal()"><i class="ri-close-line"></i></span>
+        <h3>Confirm Your Eco-Luxury Stay</h3>
+        <div class="booking-modal__grid">
+          <!-- Summary Column -->
+          <div class="booking-summary-col">
+            <h4>Reservation Summary</h4>
+            <div class="summary-details">
+              <p><strong>Room:</strong> <span id="summary-room-name">-</span></p>
+              <p><strong>Dates:</strong> <span id="summary-dates">-</span></p>
+              <p><strong>Guests:</strong> <span id="summary-guests">-</span></p>
+              <p><strong>Stay Duration:</strong> <span id="summary-nights">-</span></p>
+              <hr />
+              <div class="price-breakdown">
+                <div class="price-row"><span>Room Rate (per night):</span> <span id="summary-rate">-</span></div>
+                <div class="price-row"><span>Subtotal:</span> <span id="summary-subtotal">-</span></div>
+                <div class="price-row"><span>Service Charge (10%):</span> <span id="summary-service-charge">-</span></div>
+                <div class="price-row"><span>Government Tax (15%):</span> <span id="summary-tax">-</span></div>
+                <hr />
+                <div class="price-row total-row"><span>Total Amount:</span> <span id="summary-total">-</span></div>
+              </div>
+            </div>
+          </div>
+          <!-- Form Column -->
+          <div class="booking-form-col">
+            <h4>Guest Details</h4>
+            <form id="booking-confirmation-form">
+              <div class="form-group">
+                <label for="guest-name">Full Name</label>
+                <input type="text" id="guest-name" placeholder="John Doe" required />
+              </div>
+              <div class="form-group">
+                <label for="guest-email">Email Address</label>
+                <input type="email" id="guest-email" placeholder="john@example.com" required />
+              </div>
+              <div class="form-group">
+                <label for="guest-phone">Phone Number</label>
+                <input type="tel" id="guest-phone" placeholder="+94 77 123 4567" required />
+              </div>
+              <div class="form-group">
+                <label for="guest-requests">Special Requests (Dietary, Bed config, Tour booking)</label>
+                <textarea id="guest-requests" rows="3" placeholder="Let us know how we can make your stay perfect..."></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary btn-block">Confirm Booking Request</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Custom Trailing Cursor -->
+    <div class="custom-cursor" id="custom-cursor"></div>
+    <div class="custom-cursor-dot" id="custom-cursor-dot"></div>
+
+    <!-- Swiper JS CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="main.js"></script>
+  </body>
+</html>
